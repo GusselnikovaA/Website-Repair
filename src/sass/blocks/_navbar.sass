@@ -6,28 +6,33 @@
     align-items: center
   &__info 
     display: flex
+    font-size: 13px
     align-items: center
     text-align: right
   &__address
     display: flex
     flex-direction: column
+    font-weight: 300
   &__button
+    max-width: 170px
     margin-left: 30px
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 400
+    font-weight: 700
     text-decoration: none
     margin-top: 10px
-@media (max-width: 768px)
+@media (max-width: 650px)
   .navbar
+    padding: 17px 14px
     &__contacts
       display: none
     &__button
-      font-size: 12px
+      max-width: 137px
+      font-size: 10px
       padding: 15px 26px
     &__logo
-      width: 90px
+      width: 91px
   
 

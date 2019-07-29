@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+  
 body
   font-family: sans-serif 
 
@@ -7,6 +10,13 @@ img
 .container
   max-width: 1170px
   margin: auto
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none 
+  padding: 18px 30px
+
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -15,8 +25,9 @@ img
   .container
     max-width: 750px
     width: 95%
-.button
-  border-radius: 10px
-  background-color: $main-color
-  border: none 
-  padding: 18px 30px
+@media (max-width: 568px)
+  .container
+    max-width: 550px
+    width: 95%
+  .button
+    border-radius: 5px
