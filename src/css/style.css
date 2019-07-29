@@ -21,11 +21,12 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 1180px;
     width: 95%;
   }
 }
@@ -44,6 +45,7 @@ img {
   }
   .button {
     border-radius: 5px;
+    padding: 13px 26px;
   }
 }
 
@@ -86,7 +88,8 @@ img {
 }
 
 .navbar__button {
-  max-width: 170px;
+  width: 170px;
+  min-height: 49px;
   margin-left: 30px;
 }
 
@@ -96,20 +99,21 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 568px) {
   .navbar {
-    padding: 17px 14px;
+    padding: 16px 15px;
   }
   .navbar__contacts {
     display: none;
   }
   .navbar__button {
-    max-width: 137px;
+    min-height: 39px;
+    width: 137px;
     font-size: 10px;
-    padding: 15px 26px;
+    margin-left: 40px;
   }
   .navbar__logo {
     width: 91px;
