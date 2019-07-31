@@ -1,5 +1,6 @@
 .hero
   padding: 50px 0px
+  background-color: $background-color
   &-block 
     display: flex
   &-text
@@ -23,17 +24,21 @@
       align-items: center
       margin-bottom: 24px
     &__image
+      display: flex
+      justify-content: center
+      align-items: center
       width: 40px
       height: 40px
       border: 2px solid $main-color
       border-radius: 50%
-      display: flex
-      justify-content: center
-      align-items: center
       margin-right: 30px
     &__text
       max-width: 300px
       line-height: 24px
+  &-img 
+    img 
+      max-width: 110%
+
 
 @media (max-width: 1200px)
   .hero
@@ -62,5 +67,20 @@
       &__image
         margin-right: 15px
 
-// @media (max-width: 568px)
+@media (max-width: 568px)
+  .hero
+    padding: 25px 0
+    &-text
+      padding-left: 10px
+      &__title 
+        margin-bottom: 5px
+    &-list 
+      &__text
+        max-width: 230px
+        line-height: 1.4
+    &-img
+      img
+        max-width: 104%
+
+  
 
