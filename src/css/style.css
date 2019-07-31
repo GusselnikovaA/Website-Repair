@@ -119,4 +119,32 @@ img {
     width: 91px;
   }
 }
+
+.hero {
+  padding: 50px 0px;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 140px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.hero-text__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
