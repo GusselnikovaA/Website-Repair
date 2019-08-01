@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Museo Sans Cyrl 300';
+  font-family: 'Museo Sans Light';
   src: url("../fonts/Museo/MuseoSansCyrl-300.eot");
-  src: local("../fonts/Museo/MuseoSansCyrl-300"), url("../fonts/Museo/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSansCyrl-300.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Museo/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/Museo/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Museo Sans Cyrl 700';
+  font-family: 'Museo Sans Bold';
   src: url("../fonts/Museo/MuseoSansCyrl-700.eot");
-  src: local("../fonts/Museo/MuseoSansCyrl-700"), url("../fonts/Museo/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSansCyrl-700.woff") format("woff");
+  src: url("../fonts/Museo/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
 }
 
@@ -33,11 +33,40 @@ img {
   margin: auto;
 }
 
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+  padding: 18px 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffdb33;
   cursor: pointer;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px 26px;
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -103,12 +132,10 @@ img {
 }
 
 .navbar__button {
-  width: 170px;
+  max-width: 170px;
   height: 49px;
   margin-left: 30px;
   font-size: 13px;
-  font-family: 'Museo Sans Cyrl 700', sans-serif;
-  font-weight: 700;
 }
 
 .navbar__phone {
@@ -117,7 +144,7 @@ img {
   font-size: 20px;
   text-decoration: none;
   margin-top: 7px;
-  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -163,7 +190,7 @@ img {
   font-size: 41px;
   line-height: 55px;
   margin-bottom: 38px;
-  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -171,7 +198,7 @@ img {
   display: inline-block;
   font-size: 20px;
   margin-bottom: 70px;
-  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -188,6 +215,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 24px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -263,6 +294,77 @@ img {
   .hero-list__text {
     max-width: 230px;
     line-height: 1.2;
+  }
+}
+
+.offer {
+  background: url("../img/offer/offer_img.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
