@@ -8,6 +8,7 @@
   <title>Ремонт квартир</title>
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -37,6 +38,11 @@
     <!-- /.container -->
   </nav>
   <!-- /.navbar -->
+
+  <!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
+  <button class="up" id="up" v>
+    <i class="fa fa-angle-double-up"></i>
+  </button>
 
   <main>
     <!-- ОСНОВНАЯ СЕКЦИЯ ПРИ ОТКРЫТИИ САЙТА-->
@@ -84,7 +90,7 @@
     <!-- /.hero -->
 
     <!-- ПРЕДЛОЖЕНИЕ КОМПАНИИ. ПЕРЕЗВОНИТЕ НАМ -->
-    <section class="offer section">
+    <section class=" section offer">
       <div class="container">
         <div class="offer-block">
           <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
@@ -103,10 +109,10 @@
 
           <div class="offer-success" id="success">
             <div class="offer-success__content">
-                <button class="offer-success__close" id="offer-close">&times;</button>
-                <h2 class="offer-success__text">Спасибо за заявку, скоро мы вам перезвоним.</h2>
+              <button class="offer-success__close" id="offer-close">&times;</button>
+              <h2 class="offer-success__text">Спасибо за заявку, скоро мы вам перезвоним.</h2>
+            </div>
           </div>
-        </div>
           <!-- /.success -->
 
           <div class="offer-call">
@@ -124,11 +130,135 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+
+
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и
+          домах
+        </h2>
+        <!-- /.section-title portfolio__title -->
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt=""></div>
+          <!-- /.slider__item -->
+        </div>
+        <!-- /.slider -->
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="img/portfolio/left-arrow.png" alt="">
+          </div>
+          <div class="arrows__right">
+            <img src="img/portfolio/right-arrow.png" alt="">
+          </div>
+        </div>
+        <!-- /.arrows -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
+
+    <section class="section price">
+      <div class="container">
+        <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+        <!-- /.section-title price__title -->
+        <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+        <!-- /.section-subtitle price__subtitle -->
+
+        <div class="cards">
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/bathroom.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/living.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт комнат и квартир</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/office.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Отделка офисных помещений</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/buildings.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт в новостройках</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/kitchen.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт кухонь</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card">
+            <div class="card__image"><img src="img/price/houses.jpg" alt=""></div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт дач и коттеджей</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.cards -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section price -->
+
   </main>
 
-      <button class="up" id="up"v>
-        <i class="fa fa-angle-double-up"></i>
-      </button>
+
+
+
 
 
 
@@ -136,26 +266,26 @@
   <div class="modal" id="modal">
     <div class="modal-container">
       <div class="modal-block">
-          <button class="modal-block__close" id="close">&times;</button>
-          <h2 class="section-title modal__title">Узнайте точную стоимость ремонта по телефону!
-          </h2>
-          <!-- /.section-title -->
-          <span class="section-subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами
+        <button class="modal-block__close" id="close">&times;</button>
+        <h2 class="section-title modal__title">Узнайте точную стоимость ремонта по телефону!
+        </h2>
+        <!-- /.section-title -->
+        <span class="section-subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами
+        </span>
+        <!-- /.section-subtitle -->
+        <form action="#" class="form modal__form">
+          <input type="text" class="input modal__input" placeholder="Ваше имя">
+          <input type="tel" class="input modal__input" placeholder="Ваш телефон">
+          <button class="button modal__button">Узнать стоимость</button>
+        </form>
+        <!-- /.form modal__form -->
+        <div class="modal-call">
+          <span class="modal-call__text">Или Вы можете перезвонить нам сами
+            по телефону:
           </span>
-          <!-- /.section-subtitle -->
-          <form action="#" class="form modal__form">
-            <input type="text" class="input modal__input" placeholder="Ваше имя">
-            <input type="tel" class="input modal__input" placeholder="Ваш телефон">
-            <button class="button modal__button">Узнать стоимость</button>
-          </form>
-          <!-- /.form modal__form -->
-          <div class="modal-call">
-            <span class="modal-call__text">Или Вы можете перезвонить нам сами
-                по телефону:
-            </span>
-              <a href="tel:+7(8182)42-251-31" class="modal__phone">+7 (8182) 42-51-31</a>
-          </div>
-          <!-- /.modal-call -->
+          <a href="tel:+7(8182)42-251-31" class="modal__phone">+7 (8182) 42-51-31</a>
+        </div>
+        <!-- /.modal-call -->
       </div>
       <!-- /.modal-container -->
     </div>
@@ -164,13 +294,39 @@
   <!-- /.modal -->
 
   <!-- <script src="js/main.js"></script> -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/up.js"></script>
   <script src="js/offer.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+          {
+            breakpoint: 568,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+        
+        ]
+      });
+    });
+  </script>
 
 </body>
 

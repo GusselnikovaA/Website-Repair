@@ -12,10 +12,13 @@ $('#offer-form').on('submit', function(event) {
         $('#success').removeClass('offer-success__active');
       }, 3000);
     },
+
     error: function(jqXHR, textStatus) {
       console.log(jqXHR + ': ' + textStatus);
     }
   });
+  $("input, textarea").val("");
+  // $("offer__input")[0].reset();
 });
 
   $('#offer-close').on('click', function(){
