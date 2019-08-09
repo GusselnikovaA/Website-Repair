@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -49,7 +50,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-block">
-          <div class="hero-text">
+          <div class="hero-text wow fadeIn" data-wow-duration="1.5s">
             <h1 class="hero-text__title">
               Внутренняя отделка помещений "под ключ"
             </h1>
@@ -78,7 +79,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-img">
+          <div class="hero-img wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1.5s">
             <img src="img/hero/hero_image.png" alt="План квартиры">
           </div>
           <!-- /.hero-img -->
@@ -90,7 +91,7 @@
     <!-- /.hero -->
 
     <!-- ПРЕДЛОЖЕНИЕ КОМПАНИИ. ПЕРЕЗВОНИТЕ НАМ -->
-    <section class=" section offer">
+    <section class=" section offer wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
       <div class="container">
         <div class="offer-block">
           <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
@@ -102,7 +103,7 @@
           <form action="#" class="form offer__form" id="offer-form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект
+            <button class="button offer__button wow bounce infinite">Получить бесплатный дизайн-проект
             </button>
           </form>
           <!-- /.form offer__form -->
@@ -132,18 +133,18 @@
     <!-- /.offer -->
 
 
-    <section class="section portfolio">
+    <section class="section portfolio wow fadeIn" data-wow-duration="2s">
       <div class="container">
         <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и
           домах
         </h2>
         <!-- /.section-title portfolio__title -->
         <div class="slider">
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt=""></div>
+          <div class="slider__item wow fadeInLeft"><img class="slider__image" src="img/portfolio/slider-1.png" alt=""></div>
           <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt=""></div>
+          <div class="slider__item wow fadeInLeft" data-wow-delay="0.1s"><img class="slider__image" src="img/portfolio/slider-2.png" alt=""></div>
           <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt=""></div>
+          <div class="slider__item wow fadeInLeft" data-wow-delay="0.2s"><img class="slider__image" src="img/portfolio/slider-3.png" alt=""></div>
           <!-- /.slider__item -->
           <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt=""></div>
           <!-- /.slider__item -->
@@ -167,7 +168,7 @@
     </section>
     <!-- /.section portfolio -->
 
-    <section class="section price">
+    <section class="section price wow fadeIn" data-wow-duration="2s"">
       <div class="container">
         <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
         <!-- /.section-title price__title -->
@@ -175,7 +176,7 @@
         <!-- /.section-subtitle price__subtitle -->
 
         <div class="cards">
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/bathroom.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -187,7 +188,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
             <div class="card__image"><img src="img/price/living.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -199,7 +200,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
             <div class="card__image"><img src="img/price/office.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -211,7 +212,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
             <div class="card__image"><img src="img/price/buildings.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -223,7 +224,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
             <div class="card__image"><img src="img/price/kitchen.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -235,7 +236,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
             <div class="card__image"><img src="img/price/houses.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -300,7 +301,11 @@
   <script src="js/up.js"></script>
   <script src="js/offer.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
+    // Инициализация WOW.js
+    new WOW().init();
+    // Скрипт слайдера
     $(document).ready(function () {
       $('.slider').slick({
         slidesToShow: 3,
