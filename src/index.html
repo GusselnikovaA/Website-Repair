@@ -104,7 +104,7 @@
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input offer__input phone" placeholder="Ваш телефон">
             <input type="email" name="useremail" class="input offer__input" placeholder="Ваш email">
-            <button class="button offer__button wow bounce infinite">Получить бесплатный дизайн-проект
+            <button class="button offer__button wow bounce" data-wow-iteration="4">Получить бесплатный дизайн-проект
             </button>
           </form>
           <!-- /.form offer__form -->
@@ -408,7 +408,7 @@
         <span class="section-subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами
         </span>
         <!-- /.section-subtitle -->
-        <form action="#" class="form modal__form">
+        <form action="#" class="form modal__form" id="modal-form">
           <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
           <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
           <button class="button modal__button">Узнать стоимость</button>
@@ -445,6 +445,34 @@
     $(document).ready(function () {
       // Валидация формы
       $('#brif-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          useremail: {
+            required: true,
+            email: true
+          },
+          userphone: {
+            required: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format ("Минимальное количество символов: 2"),
+            maxlength: jQuery.validator.format ("Максимальное количество символов: 15")
+          },
+          useremail: {
+            required: "Заполните поле", 
+            email: "Введите корректный email. Например: name@domain.com"
+          },
+          userphone: "Заполните поле"
+        }
+      });
+      $('#offer-form').validate({
         rules: {
           username: {
             required: true,
