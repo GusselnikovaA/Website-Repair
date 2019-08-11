@@ -103,6 +103,7 @@
           <form action="#" class="form offer__form" id="offer-form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input offer__input phone" placeholder="Ваш телефон">
+            <input type="email" name="useremail" class="input offer__input" placeholder="Ваш email">
             <button class="button offer__button wow bounce infinite">Получить бесплатный дизайн-проект
             </button>
           </form>
@@ -373,8 +374,8 @@
             </span>
             <form action="#" id="brif-form">
               <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
-              <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-              <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
+              <input type="tel" name="userphone" class="input brif__input phone" placeholder="Ваш телефон">
+              <input type="email" name="useremail" class="input brif__input" placeholder="Ваш email">
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд
               </span>
@@ -408,8 +409,8 @@
         </span>
         <!-- /.section-subtitle -->
         <form action="#" class="form modal__form">
-          <input type="text" class="input modal__input" placeholder="Ваше имя">
-          <input type="tel" class="input modal__input phone" placeholder="Ваш телефон">
+          <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
+          <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
           <button class="button modal__button">Узнать стоимость</button>
         </form>
         <!-- /.form modal__form -->
@@ -447,23 +448,28 @@
         rules: {
           username: {
             required: true,
-            minlength: 2
+            minlength: 2,
+            maxlength: 15
           },
-          email: {
+          useremail: {
             required: true,
             email: true
           },
-          phone: {
+          userphone: {
             required: true
           }
         },
         messages: {
           username: {
-            required: "Укажите имя",
-            minlength: "Минимальное количество символов: 2"
+            required: "Заполните поле",
+            minlength: jQuery.validator.format ("Минимальное количество символов: 2"),
+            maxlength: jQuery.validator.format ("Максимальное количество символов: 15")
           },
-          email: "Введите email",
-          phone: "Введите телефон"
+          useremail: {
+            required: "Заполните поле", 
+            email: "Введите корректный email. Например: name@domain.com"
+          },
+          userphone: "Заполните поле"
         }
       });
       // Маска для телфона
