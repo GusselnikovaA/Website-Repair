@@ -47,10 +47,10 @@
 
   <main>
     <!-- ОСНОВНАЯ СЕКЦИЯ ПРИ ОТКРЫТИИ САЙТА-->
-    <section class="hero">
+    <section class="hero wow fadeIn" data-wow-duration="1.5s">
       <div class="container">
         <div class="hero-block">
-          <div class="hero-text wow fadeIn" data-wow-duration="1.5s">
+          <div class="hero-text">
             <h1 class="hero-text__title">
               Внутренняя отделка помещений "под ключ"
             </h1>
@@ -79,7 +79,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-img wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1.5s">
+          <div class="hero-img">
             <img src="img/hero/hero_image.png" alt="План квартиры">
           </div>
           <!-- /.hero-img -->
@@ -104,7 +104,7 @@
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input offer__input phone" placeholder="Ваш телефон">
             <input type="email" name="useremail" class="input offer__input" placeholder="Ваш email">
-            <button class="button offer__button wow bounce" data-wow-iteration="4">Получить бесплатный дизайн-проект
+            <button class="button offer__button wow bounce" data-wow-iteration="3">Получить бесплатный дизайн-проект
             </button>
           </form>
           <!-- /.form offer__form -->
@@ -277,7 +277,7 @@
         </span>
         <!-- /.section-subtitle steps__subtitle -->
         <div class="steps-block">
-          <div class="step">
+          <div class="step wow fadeInLeft"">
             <div class="step__image">
               <img src="img/steps/woman-with-headset.png" alt="оператор в наушниках">
             </div>
@@ -287,7 +287,7 @@
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
-          <div class="step">
+          <div class="step wow fadeInLeft" data-wow-delay="0.3s">
             <div class="step__image">
               <img src="img/steps/wall-clock.png" alt="настенные часы">
             </div>
@@ -297,7 +297,7 @@
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
-          <div class="step">
+          <div class="step wow fadeInLeft" data-wow-delay="0.6s">
             <div class="step__image">
               <img src="img/steps/money.png" alt="деньги">
             </div>
@@ -307,7 +307,7 @@
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
-          <div class="step">
+          <div class="step wow fadeInLeft" data-wow-delay="0.9s">
             <div class="step__image">
               <img src="img/steps/folded-document-icon.png" alt="документы">
             </div>
@@ -317,7 +317,7 @@
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
-          <div class="step">
+          <div class="step wow fadeInLeft" data-wow-delay="1.2s">
             <div class="step__image">
               <img src="img/steps/calendar.png" alt="календарь">
             </div>
@@ -388,8 +388,51 @@
       <!-- /.container -->
     </section>
     <!-- /.section brif -->
-
   </main>
+
+
+  <footer class="footer">
+    <div class="map" id="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8b6fd3eadeccabf260e6ab64623216c4e4813293ad16efdb0832faeb3465f5b4&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    <!-- /.map -->
+    <div class="container">
+      <div class="contacts-block">
+        <div class="contacts">
+          <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас <br> по всем вопросам ремонта</h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/map-placeholder.png" alt="">
+              </span>
+              <span class="contacts-list__text">г. Москва<br><span class="contacts_bold">ул. Ленинга, д. 10,<br> корпус 2, оф. 308</span></span>
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/clock.png" alt="">
+              </span> 
+              <span class="contacts-list__text">Режим работы:<br><span class="contacts_bold">с 9:00 до 18:00</span></span> 
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/phone.png" alt="">
+              </span> 
+              <span class="contacts-list__text">Телефон:<br>
+                <a href="tel:+7(495)42-251-31"><span class="contacts_bold">+ 7 (495) 42-251-31</span></a></span> 
+            </li>
+            <!-- /.contacts-list__item -->
+          </ul>
+          <!-- /.contacts-list -->
+        </div>
+        <!-- /.contacts -->
+      </div>
+      <!-- /.contacts-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer section -->
 
 
 
