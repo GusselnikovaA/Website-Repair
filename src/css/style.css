@@ -888,6 +888,96 @@ input.error {
   }
 }
 
+.slogan__text {
+  display: block;
+  padding: 100px;
+  padding-bottom: 95px;
+  font-size: 32px;
+  line-height: 50px;
+  background-color: #ffc000;
+  text-align: center;
+}
+
+.slogan-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.slogan-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f7f7f7;
+  min-height: 410px;
+}
+
+.slogan-card__text {
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 350px;
+  padding: 26px;
+  padding-top: 22px;
+}
+
+.slogan_bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .slogan-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .slogan-card {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 820px) {
+  .slogan__text {
+    padding: 50px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 568px) {
+  .slogan__text {
+    padding: 70px 25px;
+    padding-bottom: 75px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .slogan-block {
+    padding: 55px 0;
+  }
+  .slogan-card {
+    max-width: 95%;
+    min-height: 300px;
+  }
+  .slogan-card__text {
+    font-size: 12px;
+    line-height: 16.83px;
+    padding-top: 19px;
+    padding-left: 19px;
+    padding-bottom: 32px;
+  }
+}
+
 .brif {
   background-image: url("../img/brif/brif-bg-color.jpg"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
