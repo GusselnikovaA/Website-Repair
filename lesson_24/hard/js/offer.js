@@ -10,7 +10,7 @@ $('#offer-form').on('submit', function(event) {
       setTimeout(function() { // после нажатия на button мод окно автоматически закрывается чере 5000 мс
         $('#success').removeClass('offer-success__active');
       }, 3000);
-      yaCounter55767484.reachGoal('offer-form');
+      // yaCounter55767484.reachGoal('offer-form');
     },
 
     error: function(jqXHR, textStatus) {
