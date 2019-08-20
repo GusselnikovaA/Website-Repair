@@ -1,12 +1,12 @@
-const { src, dest } = require('gulp');
+const { parallel, src, dest } = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 let tinypng = require('gulp-tinypng-compress');
 
-function defaultTask(cb) {
-  console.log('задача выполнена');
-  cb();
-}
+// function defaultTask(cb) {
+//   console.log('задача выполнена');
+//   cb();
+// }
 
 function minifyСss() {
   return src('./easy/css/*.css')
@@ -39,8 +39,8 @@ function tinyImages(cb) {
     cb();
 }
 
-
-exports.default = defaultTask;
+exports.build = parallel(minifyСss, minifyHtml, moveJS, moveFonts, tinyImages);
+// exports.default = defaultTask;
 exports.minifyHtml = minifyHtml;
 exports.minifyСss = minifyСss;
 exports.moveJS = moveJS;
