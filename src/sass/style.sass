@@ -1,6 +1,17 @@
+@import 'normalize'
 @import 'fonts'
 @import 'colors'
 @import 'interface'
+
+// Подключение базового файла анимаций и отдельных анимаций, использующихся на сайте
+@import 'animate/base'
+@import 'animate/fading_entrances/fadeIn'
+@import 'animate/fading_entrances/fadeInUp'
+@import 'animate/fading_entrances/fadeInLeft'
+@import 'animate/attention_seekers/bounce'
+
+// Подключение слайдера
+@import 'slick'
 
 // Импорт стилей шапки
 @import 'blocks/navbar'
@@ -25,3 +36,5 @@
 
 // Стили модального окна
 @import 'blocks/modal'
+// Стили для окна успешной отправки формы
+@import 'blocks/success'

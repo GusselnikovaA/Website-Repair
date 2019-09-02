@@ -7,21 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54884110, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54884110" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-</head>
+  </head>
 
 <body>
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54884110, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54884110" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
   <!-- ВЕРХНЯЯ СЕКЦИЯ НАВИГАЦИИ -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
+        
         <div class="navbar__logo">
           <img src="img/logo.png" alt="Логотип">
         </div>
@@ -43,7 +41,7 @@
   <!-- /.navbar -->
 
   <!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
-  <button class="up" id="up" v>
+  <button class="up" id="up">
     <i class="fa fa-angle-double-up"></i>
   </button>
 
@@ -102,22 +100,13 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form" id="offer-form">
+          <form action="#" class="form offer__form success-form" id="offer-form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input offer__input phone" placeholder="Ваш телефон">
-            <input type="email" name="useremail" class="input offer__input" placeholder="Ваш email">
-            <button class="button offer__button wow bounce" data-wow-iteration="3">Получить бесплатный дизайн-проект
+            <button type="submit" class="button offer__button wow bounce" data-wow-iteration="3">Получить бесплатный дизайн-проект
             </button>
           </form>
           <!-- /.form offer__form -->
-
-          <div class="offer-success" id="success">
-            <div class="offer-success__content">
-              <button class="offer-success__close" id="offer-close">&times;</button>
-              <h2 class="offer-success__text">Спасибо за заявку, скоро мы вам перезвоним.</h2>
-            </div>
-          </div>
-          <!-- /.success -->
 
           <div class="offer-call">
             <span class="offer-call__text">Наш менеджер перезвонит Вам в течение 60 секунд </span>
@@ -144,27 +133,27 @@
         <!-- /.section-title portfolio__title -->
         <div class="slider">
           <div class="slider__item wow fadeInLeft">
-            <img class="slider__image" src="img/portfolio/slider-1.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-1.jpg" alt="">
           </div>
           <!-- /.slider__item -->
           <div class="slider__item wow fadeInLeft" data-wow-delay="0.1s">
-            <img class="slider__image" src="img/portfolio/slider-2.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-2.jpg" alt="">
           </div>
           <!-- /.slider__item -->
           <div class="slider__item wow fadeInLeft" data-wow-delay="0.2s">
-            <img class="slider__image" src="img/portfolio/slider-3.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-3.jpg" alt="">
           </div>
           <!-- /.slider__item -->
           <div class="slider__item">
-            <img class="slider__image" src="img/portfolio/slider-1.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-1.jpg" alt="">
           </div>
           <!-- /.slider__item -->
           <div class="slider__item">
-            <img class="slider__image" src="img/portfolio/slider-2.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-2.jpg" alt="">
           </div>
           <!-- /.slider__item -->
           <div class="slider__item">
-            <img class="slider__image" src="img/portfolio/slider-3.png" alt="">
+            <img class="slider__image" src="img/portfolio/slider-3.jpg" alt="">
           </div>
           <!-- /.slider__item -->
         </div>
@@ -197,7 +186,7 @@
           <div class="card__text">
             <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -209,7 +198,7 @@
           <div class="card__text">
             <h4 class="card__title">Ремонт комнат и квартир</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -221,7 +210,7 @@
           <div class="card__text">
             <h4 class="card__title">Отделка офисных помещений</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -233,7 +222,7 @@
           <div class="card__text">
             <h4 class="card__title">Ремонт в новостройках</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -245,7 +234,7 @@
           <div class="card__text">
             <h4 class="card__title">Ремонт кухонь</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -257,7 +246,7 @@
           <div class="card__text">
             <h4 class="card__title">Ремонт дач и коттеджей</h4>
             <!-- /.card__title -->
-            <a href="#" class="card__link">Узнать цены</a>
+            <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             <!-- /.card__link -->
           </div>
           <!-- /.card__text -->
@@ -280,7 +269,7 @@
         <!-- /.section-subtitle steps__subtitle -->
         <div class="steps-block">
           <div class="step wow fadeInLeft"">
-            <div class="step__image">
+            <div class="step__image img_1">
               <img src="img/steps/woman-with-headset.png" alt="оператор в наушниках">
             </div>
             <!-- /.step__image -->
@@ -337,9 +326,9 @@
     <!-- /.section steps -->
 
     <section class="slogan">
-        <span class="slogan__text">
+        <h3 class="slogan__text">
             Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по оптовым ценам
-        </span>
+        </h3>
       <div class="container">
         <div class="slogan-block">
           <div class="slogan-card">
@@ -385,23 +374,23 @@
             <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
             <ul class="interview-list">
               <li class="interview-list__item">
-                <span class="interview-list__counter">1</span> 
+                <span class="interview-list__counter">1.</span> 
                 <span class="interview-list__text">Какова площадь помещения?</span>
               </li>
               <!-- /.interview-list__item -->
               <li class="interview-list__item">
-                <span class="interview-list__counter">2</span>
+                <span class="interview-list__counter">2.</span>
                 <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span> 
               </li>
               <!-- /.interview-list__item -->
               <li class="interview-list__item">
-                <span class="interview-list__counter">3</span>
+                <span class="interview-list__counter">3.</span>
                 <span class="interview-list__text">Где находится помещение, в котором будет 
                     производиться ремонт?</span> 
               </li>
               <!-- /.interview-list__item -->
               <li class="interview-list__item">
-                <span class="interview-list__counter">4</span>
+                <span class="interview-list__counter">4.</span>
                 <span class="interview-list__text">Назначение помещения?</span> 
               </li>
               <!-- /.interview-list__item -->
@@ -414,7 +403,7 @@
             </h3>
             <span class="form__subtitle">Для этого заполните форму ниже
             </span>
-            <form action="#" id="brif-form">
+            <form action="#" class="success-form" id="brif-form">
               <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
               <input type="tel" name="userphone" class="input brif__input phone" placeholder="Ваш телефон">
               <input type="email" name="useremail" class="input brif__input" placeholder="Ваш email">
@@ -435,7 +424,6 @@
 
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8b6fd3eadeccabf260e6ab64623216c4e4813293ad16efdb0832faeb3465f5b4&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <!-- /.map -->
     <div class="container">
@@ -479,7 +467,14 @@
 
 
 
-
+  <!-- ОКНО БЛАГОДАРНСТИ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
+  <div class="success" id="success">
+    <div class="success__content">
+      <button class="success__close" id="success-close">&times;</button>
+      <h2 class="success__text">Спасибо за заявку, скоро мы вам перезвоним.</h2>
+    </div>
+  </div>
+  <!-- /.success -->
 
 
   <!-- МОДАЛЬНОЕ ОКНО ПРИ НАЖИМЕТ КНОПКИ ПЕРЕЗВОНИТЬ-->
@@ -513,12 +508,11 @@
   </div>
   <!-- /.modal -->
 
-  <!-- <script src="js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/up.js"></script>
-  <script src="js/offer.js"></script>
+  <script src="js/map.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
@@ -530,6 +524,7 @@
     $(document).ready(function () {
       // Валидация формы
       $('#brif-form').validate({
+        errorElement: "span",
         rules: {
           username: {
             required: true,
@@ -555,8 +550,24 @@
             email: "Введите корректный email. Например: name@domain.com"
           },
           userphone: "Заполните поле"
-        }
+        },
+        submitHandler: function (form) {
+          $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $('#offer-form').serialize(),
+            success: function(data) {
+              $("input").val("");
+              $('#success').addClass('success_active');
+              $('#success-close').on('click', function(){
+                $('#success').removeClass('success_active');
+              });
+            }
+        })
+      }
       });
+
+
       $('#offer-form').validate({
         rules: {
           username: {
@@ -583,8 +594,65 @@
             email: "Введите корректный email. Например: name@domain.com"
           },
           userphone: "Заполните поле"
-        }
+        },
+        submitHandler: function (form) {
+          $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $('#offer-form').serialize(),
+            success: function(data) {
+              $("input").val("");
+              $('#success').addClass('success_active');
+              $('#success-close').on('click', function(){
+                $('#success').removeClass('success_active');
+              });
+            }
+        })
+      }
       });
+
+
+      $('#modal-form').validate({
+        errorElement: "div",
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          userphone: {
+            required: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format ("Минимальное количество символов: 2"),
+            maxlength: jQuery.validator.format ("Максимальное количество символов: 15")
+          },
+          userphone: "Заполните поле"
+        },
+        submitHandler: function (form) {
+          $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $('#modal-form').serialize(),
+            success: function(data) {
+              $("input").val("");
+              $('#modal').removeClass('modal_active');
+              $('#success').addClass('success_active');
+              $('#success-close').on('click', function(){
+                $('#success').removeClass('success_active');
+              });
+            }
+        })
+      }
+      });
+
+
+
+
+
       // Маска для телфона
       $('.phone').mask('+7 (999) 999-99-99');
       // Скрипт слайдера
